@@ -1,11 +1,6 @@
 <?php
-    // Oracle Connection    
-    $conn = oci_pconnect("gigi", "password", "localhost/XE");
-    if (!$conn) {
-        $m = oci_error();
-        echo $m['message'], "\n";
-        exit;
-    }
+    include 'DatabaseConnection.php';
+    $conn = DatabaseConnection::getInstance()->getConnection();
 
     $userid = $_GET['user-id'];
     $userName = $_GET['name'];
