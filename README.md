@@ -15,4 +15,4 @@ This is a sample project. It works with IIS and Oracle database on Windows machi
 - DDL for the database
 
 ## Setting Up
-IIS should be configured with PHP manager application form the web platform installer to allow oci-8 for PHP integration with Oracle database. PHP 8 should be installed from the web platform installer as well. The website uses a specific username/password combination which should be changed in all of the files where it is present. The database name and host should also be changed, in the default case the database is XE on localhost. After this everything should run as intended.
+IIS should be configured with PHP manager application form the web platform installer to allow oci-8 for PHP integration with Oracle database. PHP 8 should be installed from the web platform installer as well. The website uses a specific username/password combination which should be changed `DatabaseConnection.php` file. The database name and host should also be changed, in the default case the database is XE on localhost. After this everything should run as intended.

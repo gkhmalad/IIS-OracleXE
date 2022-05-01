@@ -4,7 +4,7 @@
         private static $instance = null;
         private $connection;
 
-        private $username = 'gigi';
+        private $username = 'system';
         private$password = 'password';
         private $database = 'localhost/XE';
 
